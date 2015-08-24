@@ -27,7 +27,7 @@ Usage
  2. clone the repository, 
  3. cd into the top level
  4. run `gradlew blinkJar`
- 5. copy the resulting jar to the edison `scp blink.jar root@192.168.1.123:~/`
+ 5. copy the resulting jar to the edison `scp build/libs/blink.jar root@192.168.1.123:~/`
  5. Ssh into your edison
  6. Run the following commands (by doing this you are agreeing to [Oracle's License](http://www.oracle.com/technetwork/java/javase/terms/license/index.html), if you haven't already read it you should download from their site where you can read the license and scp the dowloaded file): 
  
