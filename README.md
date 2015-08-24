@@ -18,7 +18,6 @@ Contributions are of course welcome. Next priorities are
 
 Other tasks:
 
- - Diagrams for circuits for the examples
  - Maven central availability
  
 Usage
@@ -40,6 +39,35 @@ jdk1.8.0_51/bin/java -jar blink.jar
     
 The other examples have similar targets i.e. `gradlew touchyJar` If you want a versioned jar 
 with no Main-Class defined just run `gradlew jar`
+
+Examples
+--------
+
+Examples have [Fritzing](http://fritzing.org/home/) diagrams in the /doc folder
+
+### Blink 
+
+This is your standard blink example, but since the edison is 1.8v output you will need to 
+drive the LED from the 3.3v power on the edison and wire up a transistor or other 
+switching device to control that circuit (I used a 2N3904 from NTE because that's what 
+was cheap at You-Do-It Electronics) 
+
+```
+$> gradlew blinkJar
+```
+will build a jar that has the Blink.java example as the main class.
+
+### Touchy
+
+This extends the Blink example to react to a simple push button. When the value of
+the input pin changes from high to low due to the button being pressed and grounding 
+the input, the blink frequency of the LED toggles from on/off every second to on/off 
+every 0.1 seconds. 
+
+```
+$> gradlew touchyJar
+```
+will build a jar that has the Touchy.java example as the main class.
 
 License
 -------
