@@ -33,12 +33,12 @@ Usage
  6. Run the following commands (by doing this you are agreeing to [Oracle's License](http://www.oracle.com/technetwork/java/javase/terms/license/index.html), if you haven't already read it you should download from their site where you can read the license and scp the dowloaded file): 
  
 ```
-    wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-linux-i586.tar.gz"
-    tar xzvf jdk-8u51-linux-i586.tar.gz
-    jdk1.8.0_51/bin/java -jar blink.jar
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51-linux-i586.tar.gz"
+tar xzvf jdk-8u51-linux-i586.tar.gz
+jdk1.8.0_51/bin/java -jar blink.jar
 ```
     
-The other examples have similar targets i.e. `gradlew touchJar` If you want a versioned jar 
+The other examples have similar targets i.e. `gradlew touchyJar` If you want a versioned jar 
 with no Main-Class defined just run `gradlew jar`
 
 License
