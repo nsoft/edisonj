@@ -56,6 +56,7 @@ was cheap at You-Do-It Electronics)
 $> gradlew blinkJar
 ```
 will build a jar that has the Blink.java example as the main class.
+
 <img src="https://raw.githubusercontent.com/nsoft/edisonj/master/doc/blink_bb.png" width="500"/>
 
 ### Touchy
@@ -69,6 +70,7 @@ every 0.1 seconds.
 $> gradlew touchyJar
 ```
 will build a jar that has the Touchy.java example as the main class.
+
 <img src="https://raw.githubusercontent.com/nsoft/edisonj/master/doc/touchy_bb.png" width="500"/>
 
 License
