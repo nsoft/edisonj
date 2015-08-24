@@ -3,8 +3,14 @@ EdisonJ Java Library for Edison
 
 This project aims to create a useful pure java library for programing the Intel Edison. The
 inital support will be for Edison on the intel mini-breakout. It is not known if all
-features will become available via pure java. Contributions are of course welcome. Next
-priorities are
+features will become available via pure java. Presently implemented features:
+
+1. Write to GPIO
+2. Read from GPIO (50k pull up default)
+3. Configure input as pull up or pull down
+4. Configure the programmable pull up resistors (2k 20k 50k)
+
+Contributions are of course welcome. Next priorities are
  
 1. PWM output 
 1. GPIO interrupt support to avoid polling (not quite sure how to avoid native code here)
@@ -13,6 +19,7 @@ priorities are
 Other tasks:
 
  - Diagrams for circuits for the examples
+ - Maven central availability
  
 Usage
 -----
